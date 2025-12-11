@@ -21,8 +21,8 @@ p {line-height: 1.5em;}
 .italic {font-style: italic;}
 .bulletpoints {line-height: 1.5em;}
 .row {box-sizing: border-box;}
-.row-media {display: block; float: left; width: 280px; height: 120px; background-position: center; background-size: contain; background-repeat: no-repeat;}
-.row-text {display: block; float: left; margin-left: 12px; line-height: 1.5em; max-width: 447px;}
+.row-media {display: block; float: left; width: 250px; height: 100px; background-position: center; background-size: contain; background-repeat: no-repeat;}
+.row-text {display: block; float: left; margin-left: 12px; line-height: 1.5em; max-width: 477px;}
 .row-text span {line-height: inherit;}
 .clearfix {content: ""; clear: both; display: table;}
 .publication {margin-bottom: 32px; padding-left: 8px;}
@@ -44,7 +44,7 @@ p {line-height: 1.5em;}
 
 @media only screen and (max-width: 1000px) {
     .publication {margin-bottom: 46px;}
-    .publication .row-media {width: 260px; height: 130px; margin: auto; margin-bottom: 12px; display: block;}
+    .publication .row-media {width: 280px; height: 150px; margin: auto; margin-bottom: 12px; display: block;}
     .publication .row-text {display: block; width: 100%; margin-left: 0;}
     .press {display: block;}
 }
