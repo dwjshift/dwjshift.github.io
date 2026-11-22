@@ -37,56 +37,107 @@
 		Before this, I completed my M.Eng. and B.Eng. degrees at the <a href="https://iiis.tsinghua.edu.cn/en/">Institute for Interdisciplinary Information Sciences (IIIS), Tsinghua University</a>, where I was advised by Prof. <a href="https://people.iiis.tsinghua.edu.cn/~gaoyang/yang-gao.weebly.com/index.html">Yang Gao</a> and Prof. <a href="https://engineering.wustl.edu/faculty/Chongjie-Zhang.html">Chongjie Zhang</a>. 
 	</p>
 	<p>
-	    My research lies at the intersection of robotics and machine learning. I am particularly interested in exploring <b>how to develop scalable and general-purpose learning frameworks for high-reliability robotic manipulation</b>. My previous research has also spanned reinforcement learning and imitation learning algorithms.
+	    My research aims to enable robots to perform general-purpose manipulation reliably and efficiently in the real world. My current focus is on learning from real-world interaction (e.g., <a href="https://value-sim2real.github.io/">real-world RL</a> and <a href="https://dwjshift.github.io/HinFlow/">hindsight imitation</a>) and acquiring priors to make such learning more effective (e.g., through <a href="https://value-sim2real.github.io/">sim-to-real transfer</a> and <a href="Agent_Guided_Reinforcement_Learning_for_Robot_Policy_Improvement___CoRL_2026_workshop.pdf">foundation-model agents</a>).
 	</p>
     </div>
-    <div>
-        <h2 class="noselect">Publications</h2>
+    <div id="publications" data-view="selected">
+        <div class="publications-heading">
+            <h2 class="noselect">Publications</h2>
+            <div class="publication-filters" role="group" aria-label="Publication view">
+                <button class="publication-filter" type="button" data-publication-view="selected" aria-pressed="true">Selected</button>
+                <button class="publication-filter" type="button" data-publication-view="all" aria-pressed="false">All</button>
+            </div>
+        </div>
         <p>* indicates equal contribution.</p>
-		<div class="publication row clearfix">
-            <div class="row-media" style="background-image: url(files/vsr_preview.png);" aria-hidden="true"></div>
+		<div class="publication row clearfix" data-selected="true">
+            <img class="row-media" src="files/agent-guided-rl-figure1.png" width="1117" height="409" alt="Agent-guided reinforcement learning overview and LIBERO results (Figure 1)" loading="lazy" decoding="async">
             <div class="row-text">
-                <a class="publication-title bold" href="https://value-sim2real.github.io/VSR.pdf">Value Sim-to-Real: Simulation Values for Efficient Real-World RL</a><br/>
+                <a class="publication-title bold" href="Agent_Guided_Reinforcement_Learning_for_Robot_Policy_Improvement___CoRL_2026_workshop.pdf">Agent-Guided Reinforcement Learning for Robot Policy Improvement</a><br/>
+                <span class="bold">Weijun Dong</span>, Carl Qi, Mingyuan Zhang, Manikantan Nambi, Lillian J. Ratliff, Jeroen Vanbaar&dagger;, Dylan Randle&dagger;, Jose Barreiros&dagger;<br/>
+                <span class="italic">CoRL 2026 R2RL &amp; CSIR Workshops</span><br/>
+                <a class="btn btn-red" href="Agent_Guided_Reinforcement_Learning_for_Robot_Policy_Improvement___CoRL_2026_workshop.pdf">paper</a>
+            </div>
+        </div>
+		<div class="publication row clearfix" data-selected="true">
+            <div class="row-media">
+                <video autoplay muted loop playsinline preload="metadata" poster="files/vsr-example.jpg" width="640" height="426" aria-label="Value Sim-to-Real robot manipulation demonstration and reward curve">
+                    <source src="files/vsr-example.mp4" type="video/mp4">
+                </video>
+                <img class="video-poster" src="files/vsr-example.jpg" width="640" height="426" alt="Value Sim-to-Real robot manipulation demonstration and reward curve" loading="lazy" decoding="async">
+            </div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://value-sim2real.github.io/">Value Sim-to-Real: Simulation Values for Efficient Real-World RL</a><br/>
                 <span class="bold">Weijun Dong*</span>, Yilin Wang*, Jiawei Fu, Yuchen Zhou, Henrik I. Christensen, Zhao-Heng Yin&dagger;, Hao Su&dagger;<br/>
-                <span class="italic">Under review, 2026</span><br/>
+                <span class="italic">Preprint, 2026</span><br/>
                 <a class="btn btn-red" href="https://value-sim2real.github.io/">project page</a> / <a class="btn btn-red" href="https://value-sim2real.github.io/VSR.pdf">paper</a>
             </div>
         </div>
 		<div class="publication row clearfix">
-            <div class="row-media" style="background-image: url(files/hinflow.png);"></div>
+            <div class="row-media">
+                <video autoplay muted loop playsinline preload="metadata" poster="files/residual-model-preview.jpg" width="640" height="360" aria-label="Residual Modeling and HT-Policies overview animation">
+                    <source src="files/residual-model-preview.mp4" type="video/mp4">
+                </video>
+                <img class="video-poster" src="files/residual-model-preview.jpg" width="640" height="360" alt="Residual Modeling and HT-Policies overview" loading="lazy" decoding="async">
+            </div>
             <div class="row-text">
-                <a class="publication-title bold" href="https://arxiv.org/pdf/2512.19269">Translating Flow to Policy via Hindsight Online Imitation</a><br/>
+                <a class="publication-title bold" href="https://projects.thelabone.org/regression-policy/">Residual Modeling Closes the Regression and Generative Policy Gap in Robot Learning</a><br/>
+                Yuchen Zhou*, Jiacheng You*, Weikang Wan, <span class="bold">Weijun Dong</span>, Yang Gao, Jiayuan Mao<br/>
+                <span class="italic">Preprint, 2026</span><br/>
+                <a class="btn btn-red" href="https://projects.thelabone.org/regression-policy/">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2610.12231">arXiv</a>
+            </div>
+        </div>
+		<div class="publication row clearfix">
+            <div class="row-media">
+                <video autoplay muted loop playsinline preload="metadata" poster="files/anchorq-preview.jpg" width="640" height="360" aria-label="AnchorQ real-world robot demonstration">
+                    <source src="files/anchorq-preview.mp4" type="video/mp4">
+                </video>
+                <img class="video-poster" src="files/anchorq-preview.jpg" width="640" height="360" alt="AnchorQ real-world robot demonstration" loading="lazy" decoding="async">
+            </div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://anchorq-rl.com/">AnchorQ: Sample-Efficient Reinforcement Learning for Policy Improvement via Flow-Reversed Action Anchors</a><br/>
+                Carl Qi, <span class="bold">Weijun Dong</span>, Xiaojie Wang, Peiyi Chen, Rahul Sajnani, Mingyuan Zhang, Amy Zhang, Jose Barreiros, Manikantan Nambi, Lillian J. Ratliff, Dylan Randle<br/>
+                <span class="italic">Preprint, 2026</span><br/>
+                <a class="btn btn-red" href="https://anchorq-rl.com/">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2610.22852">arXiv</a>
+            </div>
+        </div>
+		<div class="publication row clearfix" data-selected="true">
+            <picture class="row-media">
+                <source srcset="files/hinflow.png" media="(prefers-reduced-motion: reduce)">
+                <img src="files/hinflow-method.gif" width="616" height="360" alt="HinFlow method overview animation" loading="lazy" decoding="async">
+            </picture>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://dwjshift.github.io/HinFlow/">Translating Flow to Policy via Hindsight Online Imitation</a><br/>
                 Yitian Zheng*, Zhangchen Ye*, <span class="bold">Weijun Dong*</span>, Shengjie Wang, Yuyang Liu, Chongjie Zhang, Chuan Wen&dagger;, Yang Gao&dagger;<br/>
                 <span class="italic">ICLR 2026</span><br/>
-                <a class="btn btn-red" href="https://dwjshift.github.io/HinFlow/">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2512.19269">arXiv</a> / <a class="btn" href="https://github.com/yzc0731/HinFlow">code</a>
+                <a class="btn btn-red" href="https://dwjshift.github.io/HinFlow/">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2512.19269">paper</a> / <a class="btn" href="https://github.com/yzc0731/HinFlow">code</a>
             </div>
         </div>
-        <div class="publication row clearfix">
-            <div class="row-media" style="background-image: url(files/ads.jpg);"></div>
+        <div class="publication row clearfix" data-selected="true">
+            <img class="row-media" src="files/ads.jpg" width="1545" height="912" alt="Automatic Discount Scheduling overview" loading="lazy" decoding="async">
             <div class="row-text">
-                <a class="publication-title bold" href="https://arxiv.org/pdf/2310.07433">Imitation Learning from Observation with Automatic Discount Scheduling</a><br/>
+                <a class="publication-title bold" href="https://il-ads.github.io/">Imitation Learning from Observation with Automatic Discount Scheduling</a><br/>
                 Yuyang Liu*, <span class="bold">Weijun Dong*</span>, Yingdong Hu, Chuan Wen, Zhao-Heng Yin, Chongjie Zhang, Yang Gao<br/>
                 <span class="italic">ICLR 2024</span><br/>
-                <a class="btn btn-red" href="https://il-ads.github.io/">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2310.07433">arXiv</a> / <a class="btn" href="https://github.com/dwjshift/IL_ADS">code</a>
+                <a class="btn btn-red" href="https://il-ads.github.io/">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2310.07433">paper</a> / <a class="btn" href="https://github.com/dwjshift/IL_ADS">code</a>
             </div>
         </div>
-        <div class="publication row clearfix">
-            <div class="row-media" style="background-image: url(files/sopcg.jpg);"></div>
+        <div class="publication row clearfix" data-selected="true">
+            <img class="row-media" src="files/sopcg.jpg" width="1761" height="714" alt="Self-Organized Polynomial-Time Coordination Graphs overview" loading="lazy" decoding="async">
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/pdf/2112.03547">Self-Organized Polynomial-Time Coordination Graphs</a><br/>
                 Qianlan Yang*, <span class="bold">Weijun Dong*</span>, Zhizhou Ren*, Jianhao Wang, Tonghan Wang, Chongjie Zhang<br/>
                 <span class="italic">ICML 2022</span><br/>
-                <a class="btn btn-red" href="https://arxiv.org/abs/2112.03547">arXiv</a> / <a class="btn" href="https://github.com/yanQval/SOP-CG">code</a>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2112.03547">paper</a> / <a class="btn" href="https://github.com/yanQval/SOP-CG">code</a>
             </div>
         </div>
         <div class="publication row clearfix">
-            <div class="row-media" style="background-image: url(files/casec.jpg);"></div>
+            <img class="row-media" src="files/casec.jpg" width="1377" height="646" alt="Context-Aware Sparse Deep Coordination Graphs overview" loading="lazy" decoding="async">
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/pdf/2106.02886">Context-Aware Sparse Deep Coordination Graphs
                 </a><br/>
                 Tonghan Wang*, Liang Zeng*, <span class="bold">Weijun Dong</span>, Qianlan Yang, Yang Yu, Chongjie Zhang<br/>
                 <span class="italic">ICLR 2022 (<span class="bold" style="color: #f09228;">Spotlight</span>)</span> <br/>
-                <a class="btn btn-red" href="https://arxiv.org/abs/2106.02886">arXiv</a> / <a class="btn" href="https://github.com/TonghanWang/CASEC-MACO-benchmark">code</a>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2106.02886">paper</a> / <a class="btn" href="https://github.com/TonghanWang/CASEC-MACO-benchmark">code</a>
             </div>
         </div>
     </div>
@@ -100,3 +151,17 @@
         </p>
     </div>
 </div>
+<script>
+    (() => {
+        const publications = document.getElementById('publications');
+        const filters = publications.querySelectorAll('[data-publication-view]');
+        filters.forEach(button => {
+            button.addEventListener('click', () => {
+                publications.dataset.view = button.dataset.publicationView;
+                filters.forEach(filter => {
+                    filter.setAttribute('aria-pressed', String(filter === button));
+                });
+            });
+        });
+    })();
+</script>
