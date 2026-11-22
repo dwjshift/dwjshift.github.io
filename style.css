@@ -36,7 +36,10 @@ p {line-height: 1.5em;}
 .publication-filter:hover {border-color: #2471a3;}
 .publication-filter:focus-visible {outline: 2px solid #2471a3; outline-offset: 2px;}
 #publications[data-view="selected"] .publication:not([data-selected="true"]) {display: none;}
-.publication {margin-bottom: 32px; padding-left: 8px;}
+.publication {display: flex; align-items: flex-start; gap: 37px; width: 100%; margin-bottom: 15px; padding: 14px 16px; border: 1px solid #efefef; border-radius: 10px; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03); transition: box-shadow 0.2s ease;}
+.publication:hover {box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);}
+.publication .row-media {float: none; flex: 0 0 225px;}
+.publication .row-text {float: none; flex: 1; min-width: 0; max-width: none; margin-left: 0;}
 .publication.highlight {background-color: #fff8df; width: 100%; padding-top: 8px; padding-bottom: 8px; border-radius: 4px;}
 .press {width: 100px; height: 80px; border: 1px solid #def; margin-right: 12px; background-size: cover;}  
 .img-contain {background-size: contain !important;}
@@ -59,8 +62,8 @@ p {line-height: 1.5em;}
 }
 
 @media only screen and (max-width: 1000px) {
-    .publication {margin-bottom: 46px;}
-    .publication .row-media {width: 252px; margin: auto; margin-bottom: 40px; display: block;}
-    .publication .row-text {display: block; width: 100%; margin-left: 0;}
+    .publication {flex-direction: column; gap: 40px;}
+    .publication .row-media {flex: none; width: 252px; margin: auto; display: block;}
+    .publication .row-text {flex: none; display: block; width: 100%; margin-left: 0;}
     .press {display: block;}
 }
